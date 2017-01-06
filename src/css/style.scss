@@ -1,0 +1,39 @@
+@import 'reset';
+@import 'bulma';
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    background-color: #607D8B;
+    font-family: "Segoe UI", sans-serif;
+
+    > nav {
+        background-color: #455A64;
+        color: #FFFFFF;
+        padding: .5rem;
+        margin-bottom: 0;
+
+        i.fa {
+            font-size: .8em;
+        }
+    }
+
+    > main {
+        flex: 1;
+        color: #ffffff;
+    }
+
+    > footer {
+        height: 2rem;
+        background-color: #455A64;
+    }
+
+}

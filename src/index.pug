@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet")
+  body
+    #app
+      nav.level
+        .level-left
+          .level-item
+            router-link(to="/" exact).button.is-small.is-primary
+              span.icon
+                i.fa.fa-home
+              span Home
+          .level-item
+            router-link(to="/links" exact).button.is-small.is-primary
+              span.icon
+                i.fa.fa-anchor
+              span Anchors
+          .level-item
+            router-link(to="/page" exact).button.is-small.is-primary
+              span.icon
+                i.fa.fa-video-camera
+              span Video
+        .level-right
+      main
+        router-view
+      footer

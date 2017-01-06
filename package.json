@@ -1,0 +1,43 @@
+{
+  "name": "webpack2-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varbrad/webpack2-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varbrad/webpack2-example/issues"
+  },
+  "homepage": "https://github.com/varbrad/webpack2-example#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "bulma-loader": "^1.0.1",
+    "css-loader": "^0.26.1",
+    "html-webpack-plugin": "^2.26.0",
+    "node-sass": "^4.1.1",
+    "pug": "^2.0.0-beta6",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "bulma": "^0.3.0",
+    "lodash": "^4.17.4",
+    "vue": "^2.1.8",
+    "vue-router": "^2.1.1"
+  }
+}
