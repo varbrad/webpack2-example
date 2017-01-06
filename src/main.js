@@ -17,7 +17,8 @@ const app = new Vue({
     },
     router: new VueRouter({
         routes: [
-            { path: '/', component: require('./components/view-home') }
+            { path: '/', component: require('./components/view-home') },
+            { path: '/video', component: require('./components/view-video') }
         ],
         linkActiveClass: 'is-danger'
     })

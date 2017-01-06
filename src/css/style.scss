@@ -27,8 +27,21 @@ html, body {
     }
 
     > main {
+        position: relative;
+        display: flex;
         flex: 1;
+        align-items: center;
+        justify-content: center;
         color: #ffffff;
+
+        > div {
+            position: absolute;
+            display: flex;
+            padding: 1rem;
+            border-radius: 3px;
+            background-color: rgba(0, 0, 0, .2);
+            box-shadow: 0px 4px 32px rgba(0, 0, 0, .1), 0px 2px 3px rgba(0, 0, 0, .2);
+        }
     }
 
     > footer {
@@ -36,4 +49,12 @@ html, body {
         background-color: #455A64;
     }
 
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: transform .3s ease-out, opacity .3s ease-out;
+}
+.fade-enter, .fade-leave-active {
+  transform: scale(0);
+  opacity: 0;
 }

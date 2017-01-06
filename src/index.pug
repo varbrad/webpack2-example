@@ -18,11 +18,12 @@ html(lang="en")
                 i.fa.fa-anchor
               span Anchors
           .level-item
-            router-link(to="/page" exact).button.is-small.is-primary
+            router-link(to="/video" exact).button.is-small.is-primary
               span.icon
                 i.fa.fa-video-camera
               span Video
         .level-right
       main
-        router-view
+        transition(name="fade")
+          router-view
       footer
