@@ -36,7 +36,7 @@ html, body {
 
         > div {
             position: absolute;
-            display: flex;
+            display: inline-block;
             padding: 1rem;
             border-radius: 3px;
             background-color: rgba(0, 0, 0, .2);
@@ -55,6 +55,6 @@ html, body {
   transition: transform .3s ease-out, opacity .3s ease-out;
 }
 .fade-enter, .fade-leave-active {
-  transform: scale(0);
+  transform: translateY(-15%);
   opacity: 0;
 }
