@@ -1,5 +1,5 @@
-import _ from 'lodash';
-import Vue from 'vue';
+// import _ from 'lodash'
+import Vue from 'vue'
 
 module.exports = Vue.component('view-video', {
   template: `<div>
@@ -14,4 +14,4 @@ module.exports = Vue.component('view-video', {
       message: 'Hello'
     }
   }
-});
+})

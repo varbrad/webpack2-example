@@ -8,20 +8,20 @@ html(lang="en")
       nav.level
         .level-left
           .level-item
-            router-link(to="/" exact).button.is-small.is-primary.is-outlined
+            router-link(to="/" exact).button.is-small.is-info
               span.icon
                 i.fa.fa-home
               span Home
           .level-item
-            router-link(to="/links" exact).button.is-small.is-primary.is-outlined
-              span.icon
-                i.fa.fa-anchor
-              span Anchors
-          .level-item
-            router-link(to="/video" exact).button.is-small.is-primary.is-outlined
+            router-link(to="/video" exact).button.is-small.is-info
               span.icon
                 i.fa.fa-video-camera
               span Video
+          .level-item
+            router-link(to="/form" exact).button.is-small.is-info
+              span.icon
+                i.fa.fa-file-text
+              span Form
         .level-right
       main
         transition(name="fade")

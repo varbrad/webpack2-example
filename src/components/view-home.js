@@ -1,5 +1,5 @@
-import _ from 'lodash';
-import Vue from 'vue';
+// import _ from 'lodash'
+import Vue from 'vue'
 
 module.exports = Vue.component('view-home', {
   template: `<div>
@@ -11,4 +11,4 @@ module.exports = Vue.component('view-home', {
       message: 'Hello'
     }
   }
-});
+})
