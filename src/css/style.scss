@@ -16,13 +16,19 @@ html, body {
     font-family: "Segoe UI", sans-serif;
 
     > nav {
-        background-color: #c9c9c9;
+        transition: all .3s ease-out;
+        background-color: #f3f3f3;
         color: #292929;
         padding: .5rem;
         margin-bottom: 0;
+        box-shadow: 0 4px 8px #f3f3f3;
 
         i.fa {
             font-size: .8em;
+        }
+
+        &:hover {
+          box-shadow: 0 4px 8px #c3c3c3;
         }
     }
 
@@ -38,14 +44,12 @@ html, body {
             position: absolute;
             display: inline-block;
             padding: 1rem;
-            border-radius: 3px;
-            border: 1px solid #c9c9c9;
         }
     }
 
     > footer {
         height: 2rem;
-        background-color: #c9c9c9;
+        background-color: #333;
     }
 
 }
@@ -70,5 +74,171 @@ form {
       padding: 0 .5rem;
       font-weight: 700;
     }
+  }
+}
+
+#league-table {
+  background-color: #f9f9f9;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  width: 90vw;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  font-family: "Lato";
+
+  > .row {
+    display: flex;
+
+    > p {
+      width: 10%;
+      padding: .5rem;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      text-align: center;
+      color: #777;
+      &.full {
+        flex: 1;
+        text-align: left;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: rgba(0, 0, 0, .05);
+    }
+
+    &:last-child {
+      > p {
+        border-bottom: none;
+      }
+    }
+
+    &.header {
+      background-color: #666;
+      font-weight: bold;
+
+      > p {
+        border: none;
+        color: #ddd;
+      }
+    }
+  }
+}
+
+#flip-box {
+  transition: transform 300ms ease-in-out;
+  padding: 4rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  perspective: 400px;
+
+  > .box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .6s ease-in-out;
+    background-color: #a0eeff;
+    padding: 4rem;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Dosis";
+    border-radius: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    pointer-events: none;
+
+    > p {
+      backface-visibility: hidden;
+
+      > img {
+        width: 20vw;
+      }
+
+      &.front {
+        position: absolute;
+      }
+
+      &.back {
+        transform: rotateY(-180deg);
+      }
+    }
+  }
+
+  &:hover {
+
+    > .box {
+      transform: rotateY(-180deg) scale(1.2);
+      background-color: #ffa0ee;
+    }
+  }
+}
+
+main > div.animation {
+  
+  > #animation {
+
+    overflow: hidden;
+
+    width: 100vw;
+    height: 50vh;
+    background-color: #f9f9f9;
+    background-image: url(http://i.imgur.com/xMAVTOo.png), url(http://i.imgur.com/vWphHAR.jpg);
+    background-repeat: no-repeat, repeat-x;
+    background-position: 70% 5px, 0 0;
+    animation: bg-anim linear 50s infinite;
+
+    > .plane {
+      animation: plane-anim linear 15s infinite;
+    }
+
+  }
+
+  > #horse {
+
+    overflow: hidden;
+
+    width: 179px;
+    height: 182px;
+
+    background-image: url(http://i.imgur.com/7zKyG6X.png);
+    background-position: 0% 0%;
+
+    animation: horse-anim steps(4) .5s alternate infinite;
+
+  }
+
+}
+
+@keyframes bg-anim {
+  from {
+    background-position: 70% 5px, 0 0
+  }
+  to {
+    background-position: 0% 5px, -1200px 0
+  }
+}
+
+@keyframes plane-anim {
+  0%, 100% {
+    transform: translateY(-5%) rotateZ(0);
+  }
+  25% {
+    transform: translateY(25%) rotateZ(5deg);
+  }
+  50% {
+    transform: scale(1.2) rotateZ(-7deg);
+  }
+}
+
+@keyframes horse-anim {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: calc(100% - 179px) 0%;
   }
 }

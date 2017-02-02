@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
   head
     meta(charset="utf-8")
+    title Webpack + Vue + SCSS + ES2015
     link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet")
   body
     #app
@@ -22,6 +23,21 @@ html(lang="en")
               span.icon
                 i.fa.fa-file-text
               span Form
+          .level-item
+            router-link(to="/league" exact).button.is-small.is-info
+              span.icon
+                i.fa.fa-trophy
+              span League
+          .level-item
+            router-link(to="/flip" exact).button.is-small.is-info
+              span.icon
+                i.fa.fa-repeat
+              span Flip
+          .level-item
+            router-link(to="/animation" exact).button.is-small.is-info
+              span.icon
+                i.fa.fa-picture-o
+              span Animation
         .level-right
       main
         transition(name="fade")
