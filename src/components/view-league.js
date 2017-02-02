@@ -27,6 +27,21 @@ module.exports = Vue.component('view-league', {
         {name: 'Chelsea', p: 23, gd: 32, pts: 56},
         {name: 'Liverpool', p: 23, gd: 24, pts: 47},
         {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
+        {name: 'Man City', p: 22, gd: 12, pts: 43},
         {name: 'Tottenham', p: 23, gd: 29, pts: 47}
       ]
     }

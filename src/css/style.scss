@@ -82,13 +82,21 @@ form {
   border-radius: 9px;
   border: 1px solid #ccc;
   overflow: hidden;
-  width: 90vw;
   font-size: 1.1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
   font-family: "Lato";
 
   > .row {
     display: flex;
+    width: 40vw;
+    animation: row-in-anim .4s ease-out;
+    animation-fill-mode: backwards;
+
+    @for $i from 1 to 30 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * .05s;
+      }
+    }
 
     > p {
       width: 10%;
@@ -111,6 +119,16 @@ form {
       background-color: rgba(0, 0, 0, .05);
     }
 
+    &:nth-child(2) {
+      background-color: #ddffdd;
+    }
+
+    @for $i from 19 to 22 {
+      &:nth-child(#{$i}) {
+        background-color: #ffdddd;
+      }
+    }
+
     &:last-child {
       > p {
         border-bottom: none;
@@ -126,6 +144,17 @@ form {
         color: #ddd;
       }
     }
+  }
+}
+
+@keyframes row-in-anim {
+  from {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 
