@@ -22,7 +22,8 @@ const app = new Vue({
       { path: '/form', component: require('./components/view-form') },
       { path: '/league', component: require('./components/view-league') },
       { path: '/flip', component: require('./components/view-flip') },
-      { path: '/animation', component: require('./components/view-animation') }
+      { path: '/animation', component: require('./components/view-animation') },
+      { path: '/maths', component: require('./components/view-maths') }
     ],
     linkActiveClass: 'is-warning'
   })

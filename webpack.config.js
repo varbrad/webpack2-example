@@ -13,13 +13,13 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node-modules/,
+        exclude: /node_modules/,
         query: {
           presets: ['es2015']
         }
       }, {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }, {
         test: /\.pug$/,
         loader: 'pug-loader'

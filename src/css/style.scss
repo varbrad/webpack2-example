@@ -62,6 +62,23 @@ html, body {
   opacity: 0;
 }
 
+.burstIn-enter-active {
+  transition: transform .3s ease-out, opacity .3s ease-out;
+}
+
+.burstIn-enter {
+  transform: translateY(10%);
+  opacity: 0;
+}
+
+.burstIn-leave {
+  display: none;
+}
+
+.burstIn-leave-active {
+  display: none;
+}
+
 form {
   width: 80vw;
 
@@ -269,5 +286,35 @@ main > div.animation {
   }
   to {
     background-position: calc(100% - 179px) 0%;
+  }
+}
+
+.maths {
+  h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+    &.header {
+      padding: .5rem;
+      background-color: #ccddff;
+      border-radius: 5px;
+    }
+  }
+
+  .question {
+    font-size: 2rem;
+  }
+
+  .correct, .wrong {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .7);
+  }
+  .correct {
+    background-color: #aaffaa;
+  }
+  .wrong {
+    background-color: #ffaaaa;
   }
 }
