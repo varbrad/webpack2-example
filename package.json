@@ -21,7 +21,6 @@
   "devDependencies": {
     "babel-core": "latest",
     "babel-loader": "latest",
-    "babel-polyfill": "latest",
     "babel-preset-es2015": "latest",
     "css-loader": "latest",
     "html-webpack-plugin": "latest",
