@@ -23,7 +23,9 @@ const app = new Vue({
       { path: '/league', component: require('./components/view-league') },
       { path: '/flip', component: require('./components/view-flip') },
       { path: '/animation', component: require('./components/view-animation') },
-      { path: '/maths', component: require('./components/view-maths') }
+      { path: '/maths', component: require('./components/view-maths') },
+      { path: '/editor', component: require('./components/view-editor') },
+      { path: '/calc', component: require('./components/view-calc') }
     ],
     linkActiveClass: 'is-warning'
   })

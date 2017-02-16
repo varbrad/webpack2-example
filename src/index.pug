@@ -43,6 +43,16 @@ html(lang="en")
               span.icon
                 i.fa.fa-plus
               span Maths
+          .level-item
+            router-link(to="/editor" exact).button.is-small.is-info
+              span.icon
+                i.fa.fa-code
+              span Editor
+          .level-item
+            router-link(to="/calc" exact).button.is-small.is-info
+              span.icon
+                i.fa.fa-plus
+              span Calc
         .level-right
       main
         transition(name="fade")

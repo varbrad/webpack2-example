@@ -1,0 +1,6 @@
+.calc
+  input.first(type="number" v-model="v1")
+  button(@click="changeSign") {{ sign }}
+  input.last(type="number" v-model="v2")
+  p Result is
+    span {{ result }}
