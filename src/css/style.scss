@@ -322,6 +322,10 @@ main > div.animation {
 
 .editor {
 
+  * {
+    transition: all .2s ease-out;
+  }
+
   h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -343,6 +347,7 @@ main > div.animation {
 }
 
 .calc {
+
   input, button {
     height: 4rem;
     line-height: 4rem;

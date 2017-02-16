@@ -13,7 +13,7 @@ const app = new Vue({
 
   },
   mounted: function () {
-
+    
   },
   router: new VueRouter({
     routes: [
