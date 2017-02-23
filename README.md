@@ -1,1 +1,1 @@
-# webpack2-example
+# Webpack 2 Example
