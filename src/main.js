@@ -19,6 +19,7 @@ const app = new Vue({
     routes: [
       { path: '/', component: require('./components/view-home') },
       { path: '/video', component: require('./components/view-video') },
+      { path: '/audio', component: require('./components/view-audio') },
       { path: '/form', component: require('./components/view-form') },
       { path: '/league', component: require('./components/view-league') },
       { path: '/flip', component: require('./components/view-flip') },
