@@ -81,7 +81,11 @@ html, body {
 }
 
 form {
+  transition: all .3s ease-out;
   width: 80vw;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
 
   fieldset {
     padding: 1rem;
